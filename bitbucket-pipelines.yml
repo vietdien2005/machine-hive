@@ -1,12 +1,7 @@
-# This is a sample build configuration for JavaScript.
-# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
-# Only use spaces to indent your .yml configuration.
-# -----
-# You can specify a custom docker image from Docker Hub as your build environment.
 options:
   max-time: 120
 
-image: node:10
+image: vietdien2005/circleci-hive:latest
 
 pipelines:
   default:
@@ -14,6 +9,6 @@ pipelines:
         max-time: 120
         caches:
           - node
-        script: # Modify the commands below to build your repository.
-          - npm install
-          - npm run start
+        script:
+          - yarn install
+          - yarn start
