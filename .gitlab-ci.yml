@@ -1,0 +1,11 @@
+image: vietdien2005/circleci-hive:latest
+
+cache:
+  paths:
+  - node_modules/
+
+build_async:
+  script:
+   - yarn install
+   - yarn start
+
