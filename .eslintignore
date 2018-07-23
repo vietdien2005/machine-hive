@@ -1,0 +1,5 @@
+/dist/**
+/src/static/**
+/node_modules/**
+/tmpCache/**
+!.eslintrc
