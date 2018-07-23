@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:10
+      - image: vietdien2005/circleci-hive:latest
 
     working_directory: ~/repo
 
@@ -32,7 +32,7 @@ workflows:
   nightly:
     triggers:
       - schedule:
-          cron: "0/15 * * * *"
+          cron: "0 * * * *"
 
     jobs:
       - build
